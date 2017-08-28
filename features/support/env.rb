@@ -15,6 +15,10 @@ def browser_setup(browser)
     else
       Capybara.register_driver :firefox_driver do |app|
         profile = Selenium::WebDriver::Firefox::Profile.new
+        profile['browser.download.folderList'] = 2 # custom location
+        profile['browser.download.dir'] = Dir.pwd + '/features/tmp/'
+        profile['browser.helperApps.neverAsk.saveToDisk'] = 'application/octet-stream, text/xml'
+        profile['pdfjs.disabled'] = true
         Capybara::Selenium::Driver.new(app, :browser => :firefox, :profile => profile, port: 7000 + Random.rand(1000))
       end
       Capybara.default_driver = :firefox_driver
