@@ -14,9 +14,9 @@
 - Результаты автотестов оформить в отчет (в свободной форме).
 
 Дополнительная информация:
-- Если вы используете ОС семейства UNIX: сделать импорт проекта с гитхаба командой git clone https://github.com/testers67/ruby_test_project.git
-- Если вы используете ОС Windows: можете воспользоваться данным образом VirtualBox - https://goo.gl/rzbdNZ и склонировать проект командой git clone https://github.com/testers67/ruby_test_project.git
+- Если Вы используете ОС семейства UNIX: сделать импорт проекта с гитхаба командой git clone https://github.com/testers67/ruby_test_project.git
+- Если Вы используете ОС Windows: можете воспользоваться данным образом VirtualBox - https://goo.gl/rzbdNZ и склонировать проект командой git clone https://github.com/testers67/ruby_test_project.git
 - Ключевые слова для поиска: terminal (консоль), ruby, gem, bundler, capybara, cucumber, rspec, xpath, nokogiri, regular expressions
 
 Архив проекта и отчет присылать на почту - ekaterina.boriskina@ediweb.com, elena.belyakova@ediweb.com с темой письма "Тестовое задание ФИО соискателя"
-Если у вас возникли затруднения в процессе выполнения задания, вы можете задать вопрос, отправив письмо на почту elena.belyakova@ediweb.com с темой "Вопросы по тестовому заданию ФИО"
+Если у Вас возникли затруднения в процессе выполнения задания, Вы можете задать вопрос, отправив письмо на почту elena.belyakova@ediweb.com с темой "Вопросы по тестовому заданию ФИО"
