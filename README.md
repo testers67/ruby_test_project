@@ -15,7 +15,7 @@
 
 Дополнительная информация:
 - Если Вы используете ОС семейства UNIX: сделать импорт проекта с гитхаба командой git clone https://github.com/testers67/ruby_test_project.git
-- Если Вы используете ОС Windows: можете воспользоваться данным образом VirtualBox - https://goo.gl/rzbdNZ и склонировать проект командой git clone https://github.com/testers67/ruby_test_project.git
+- Если Вы используете ОС Windows: можете воспользоваться данным образом VirtualBox - https://goo.gl/rzbdNZ и склонировать проект командой git clone https://github.com/testers67/ruby_test_project.git . Пароль к учетной записи на виртуальной машине: 123
 - Ключевые слова для поиска: terminal (консоль), ruby, gem, bundler, capybara, cucumber, rspec, xpath, nokogiri, regular expressions
 
 Архив проекта и отчет присылать на почту - ekaterina.boriskina@ediweb.com, elena.belyakova@ediweb.com с темой письма "Тестовое задание ФИО соискателя"
