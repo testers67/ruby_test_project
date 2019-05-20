@@ -4,11 +4,6 @@ require 'rubygems'
 require 'selenium-webdriver'
 require 'rspec/expectations'
 
-When(/^открываем гугл$/) do
-  visit "http://google.com"
-  sleep 1
-end
-
 When(/^захожу на страницу "(.*?)"/) do |url|
   visit url
   sleep 1
@@ -16,7 +11,7 @@ end
 
 When(/^ввожу в поисковой строке текст "(.*?)"$/) do |text|
   #Ищем строку поиска на странце
-  query = find("//body//input[@id='lst-ib']")
+  query = find("//input[@name='q']")
   #Вводим текст в строку поиска
   query.set(text)
   #Нажимаем кнопку поиска
@@ -27,14 +22,14 @@ end
 
 When(/^кликаю по первой строке выдачи$/) do
   #Ищем первую ссылку в выдаче
-  link_first = find("//h3/a[@href='https://cucumber.io/']")
+  link_first = find("//a[@href='https://cucumber.io/']/h3")
   link_first.click
   sleep 1
 end
 
 When(/^я должен увидеть текст на странице "(.*?)"$/) do |text_page|
   sleep 5
-  windows = switch_to_window { title == 'Cucumber' }
+  windows = switch_to_window {title == 'Cucumber'}
   page.should have_text text_page
 end
 
@@ -45,7 +40,14 @@ end
 
 When(/^я должен увидеть файл в папке tmp$/) do
   sleep 10
+  puts Dir.pwd
   fail 'папка tmp пуста' if Dir.glob(Dir.pwd + '/features/tmp/*')[0].nil?
+end
+Дано(/^папка Загрузки пуста$/) do
+  #FileUtils.rm_rf(Dir.glob(Dir.pwd+"/features/tmp/*"))
+  dir = Dir.pwd + '/features/tmp'
+  FileUtils.rm_r(dir) if Dir.exist?(dir)
+  FileUtils.mkdir dir
 end
 
 When(/^я должен увидеть в файле xml тег "(.*?)"$/) do |tag_text|

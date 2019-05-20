@@ -5,14 +5,15 @@
 
 
   Сценарий: test
-    Дано открываем гугл
+    Дано захожу на страницу "http://google.com"
     И ввожу в поисковой строке текст "cucumber.io"
     И кликаю по первой строке выдачи
-    И я должен увидеть текст на странице "Simple, human collaboration"
+    И я должен увидеть текст на странице "Thousands of teams worldwide trust Cucumber to deliver better products, faster."
 
   Сценарий: test2
+    И папка Загрузки пуста
     И захожу на страницу "https://rubyinstaller.org/downloads/"
-    И скачиваю файл по ссылке "https://github.com/oneclick/rubyinstaller2/releases/download/2.4.1-2/rubyinstaller-2.4.1-2-x64.exe"
+    И скачиваю файл по ссылке "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.4.6-1/rubyinstaller-devkit-2.4.6-1-x64.exe"
     И я должен увидеть файл в папке tmp
 
   Сценарий: test3
